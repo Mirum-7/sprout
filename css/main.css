@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+@import url(./reset.css);
+
+@font-face {
+  font-family: Bureau;
+  src: url(./../fonts/BureauAP/bureau.ttf);
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.btn, a.btn {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px 15px;
+  border-radius: 100px;
+  font-size: 1rem;
+  background-color: #D6CDA4;
+  color: white;
+}
+
+.btn img, a.btn img{
+  height: 1rem;
+}
+
+.section-title {
+  font-family: Bureau;
+  font-size: 7rem;
+  text-align: center;
+  padding: 30px 0;
+  line-height: 1;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.slider__list {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.slider-btn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 3rem;
+}
+
+/* header */
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px 0;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header > .container {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 20px;
+  font-size: 2rem;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+/* main page */
+
+.main-page {
+  position: relative;
+  height: 100vh;
+}
+
+.main-page__bg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.main-page__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-page > .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-page__title {
+  font-family: Bureau;
+  font-size: 15rem;
+  line-height: 1;
+}
+
+.main-page__sub-title {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.choose-plant-btn {
+  margin-top: 20px;
+}
+
+/* about us */
+
+.about-us {
+  padding: 50px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.about-us .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.about-us__item {
+  padding: 30px 60px;
+  border-radius: 25px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.about-us__item:nth-child(even) {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.about-us__item:nth-child(odd) {
+  align-self: flex-start;
+  flex-direction: row;
+}
+
+.about-us__item img {
+  height: 250px;
+  width: 250px;
+}
+
+.about-us__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  row-gap: 10px;
+}
+
+.about-us__title {
+  font-family: Bureau;
+  font-size: 7rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.about-us__text {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.sprout-is {
+  background-color: rgb(225, 220, 211);
+}
+
+.why-us {
+  background-color: rgb(234, 238, 223);
+}
+
+.peculiarities {
+  background-color: rgb(231, 221, 221);
+}
+
+/* catalog */
+
+.catalog__slider {
+  height: 500px;
+}
+
+
+/* gallery */
+
+.gallery {
+  padding: 50px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.gallery__item {
+  border-radius: 25px;
+}
